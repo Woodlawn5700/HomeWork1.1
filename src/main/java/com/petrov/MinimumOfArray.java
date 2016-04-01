@@ -20,8 +20,8 @@ import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
 public class MinimumOfArray {
 
     public int findMax(int[] array) {
-        if (array.equals(null))  {
-            throw IllegalArgumentException
+        if (array.equals(0))  {
+            throw new IllegalArgumentException();
         }
         else if(array.length == 1 ){
             return array[0];
